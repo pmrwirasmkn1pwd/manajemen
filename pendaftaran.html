@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="home.html" class="previous">&laquo; Kembali</a>
+    <h2>Rekap Calon Anggota Baru</h2>
+    <p><script>
+        var hari = ['Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu'];
+        var bulan = ['Januari', 'Februari', 'Maret','April','Mei','Juni','Juli','Agustus','September','Oktober','November','Desember'];
+
+        var tanggal = new Date().getDate();
+        var xhari = new Date().getDay();
+        var xbulan = new Date().getMonth();
+        var xtahun = new Date().getYear();
+
+        var hari = hari[xhari];
+        var bulan = bulan[xbulan];
+        var tahun = (xtahun < 1000)?xtahun + 1900 : xtahun;
+        
+        document.write(hari +', ' + tanggal + ' ' + bulan + ' ' + tahun);
+    
+    </script></p>
+    <script src="https://sheetdb.io/s/t/0yg9mi1prlxzk.js"></script>
+</body>
+</html>
+
+<style>
+    * {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    h2 {
+        padding: 0px 0px 0px 0px;
+    }
+
+    p {
+        margin-top: -20px;
+    }
+    
+    a {
+        text-decoration: none;
+        display: inline-block;
+        padding: 8px 16px;
+      }
+      
+      a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+      
+      .previous {
+        background-color: #f1f1f1;
+        color: black;
+      }
+      
+      .next {
+        background-color: #04AA6D;
+        color: white;
+      }
+      
+      .round {
+        border-radius: 50%;
+      }
+
+</style>
+
