@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <form name=login>
+        <table width=225 border=1 cellpadding=3>
+        <tr> <td colspan=2><center><font size="+2"><b>Login Pengurus</b></font<</center> </td></tr>
+        <tr><td>Username:</td><td><input type=text name=username></td></tr>
+        <tr><td>Password:</td><td><input type=password name=password></td></tr>
+        <tr<><td colspan=2 align=center><input type=button value="Login!" onClick="Login()"></td></tr>
+    </table>
+</body>
+
+<footer>
+    <center>
+        <p>Sistem Informasi dan Manajemen Keorganisasian Digital</p>
+        <p style="margin-top: -10px;">Copyright PMR Wira SMKN 1 Purwodadi</p>
+    </center>
+</footer>
+</html>
+
+<script lang="JavaScript" >
+    function Login(){
+        var done=0;
+        var tahun = new Date().getFullYear();
+        var username=document.login.username.value;
+        username=username.toLowerCase();
+        var password=document.login.password.value;
+        password=password.toLowerCase();
+
+    if (username=="sekretaris" && password==tahun) { window.location.href ="home.html"; }
+    else if (done==0) { alert("Invalid login!"); }
+    }
+</script>
